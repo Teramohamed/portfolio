@@ -31,7 +31,7 @@ export default function Accueil() {
 
         <div className="hero-image">
           <div className="circle">
-            <img src="image/Photo.jpeg" alt="Photo de profil" />
+            <img src="image/Photo.jpeg" alt="Profil" />
           </div>
         </div>
       </div>
