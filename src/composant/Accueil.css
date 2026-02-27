@@ -1,0 +1,178 @@
+/* --- HERO SECTION --- */
+.hero {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: linear-gradient(to bottom right, #eff6ff, #f9fafb);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* mobile par défaut */
+  gap: 50px;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  margin-top: 30px;
+  font-size: 48px; /* desktop par défaut */
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.hero-text h2 {
+  font-size: 28px; /* desktop par défaut */
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #374151;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  color: black;
+  text-decoration: none;
+  background: none;
+  border: 2px solid #d1d5db;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 360px;      
+  height: 400px;     
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablette et plus (≥768px) */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Mobile (<768px) */
+@media (max-width: 767px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Très petit écran (<480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

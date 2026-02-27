@@ -1,0 +1,96 @@
+.profil {
+  padding-top: 10px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.profil-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.profil-title {
+  text-align: center;
+  font-size: 40px;
+  color: #111827;
+  margin-bottom: 10px; /* réduit pour rapprocher le trait */
+  position: relative;
+}
+
+/* Trait bleu plus proche + animation */
+.formation-underline {
+  width: 70px;
+  height: 4px;
+  background-color: #2563eb;
+  margin: 8px auto 40px; /* réduit espace au-dessus */
+  border-radius: 5px;
+  animation: slideIn 1s ease forwards;
+}
+
+/* Animation du trait */
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+.profil-card {
+  background: linear-gradient(to bottom right, #eff6ff, #f9fafb);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* Animation carte */
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Effet hover pro */
+.profil-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+}
+
+.profil-card h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1f2937;
+}
+
+.profil-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Animation globale section */
+.fade-in {
+  animation: sectionFade 1s ease-in-out;
+}
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

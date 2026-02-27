@@ -1,0 +1,24 @@
+.footer {
+  background-color: #111827; /* bg-gray-900 */
+  color: white;
+  padding: 1rem 0; /* moins d'espace vertical */
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  color: #9ca3af; /* text-gray-400 */
+  font-size: 0.9rem; /* légèrement plus petit */
+  margin: 0; /* supprimer marge par défaut */
+}
+
+.footer-subtext {
+  color: #6b7280; /* text-gray-500 */
+  margin-top: 0.25rem; /* réduire l'espace */
+  font-size: 0.8rem; /* plus compact */
+}

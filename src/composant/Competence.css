@@ -1,0 +1,117 @@
+.competence {
+padding-top: 10px;
+padding-bottom: 50px;
+padding-left: 0px;
+padding-right: 0px;
+  
+  background: linear-gradient(to bottom right, #eff6ff, #f9fafb);
+  min-height: 100vh;
+}
+
+.competence-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.competence h2 {
+  font-size: 40px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.formation-underline {
+  width: 70px;
+  height: 4px;
+  background-color: #2563eb;
+  margin: 8px auto 20px;
+  border-radius: 4px;
+  animation: slideIn 0.8s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 70px;
+    opacity: 1;
+  }
+}
+
+.competence p {
+  font-size: 18px;
+  color: #6b7280;
+  margin-bottom: 50px;
+}
+
+/* GRID 2 PAR 2 */
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.competence-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Animation d’apparition */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover moderne */
+.competence-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+}
+
+.competence-card h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Centre les skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill-item {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Effet sur les tags */
+.skill-item:hover {
+  background-color: #2563eb;
+  color: white;
+}
